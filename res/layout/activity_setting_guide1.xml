@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#6DBAEB"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:text="1.欢迎使用手机防盗"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:text="你的手机防盗卫士"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/main_ic_info"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:text="SIM卡变更报警"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/main_ic_info"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:text="GPS追踪"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/main_ic_info"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:text="远程锁屏"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/main_ic_info"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:text="远程销毁数据"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sjfd_step_1" />
+
+        <Button
+            android:onClick="nextPage"
+            android:id="@+id/bt_guide_next1"
+            style="@style/ButtonNext"
+            android:text="下一步" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_guard_dot1"
+                style="@style/SettingGuideNext"
+                android:src="@android:drawable/presence_online" />
+
+            <ImageView
+                android:id="@+id/iv_guard_dot2"
+                style="@style/SettingGuideNext" />
+
+            <ImageView
+                android:id="@+id/iv_guard_dot3"
+                style="@style/SettingGuideNext" />
+
+            <ImageView
+                android:id="@+id/iv_guard_dot4"
+                style="@style/SettingGuideNext" />
+
+            <ImageView
+                android:id="@+id/iv_guard_dot5"
+                style="@style/SettingGuideNext" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

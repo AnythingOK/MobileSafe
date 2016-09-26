@@ -1,0 +1,45 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="SettingGuideNext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/presence_invisible</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="ButtonNext" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/selector_sjfd_next</item>
+        <item name="android:drawableRight">@drawable/sjfd_next</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+        <style name="ButtonPrevious" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/selector_sjfd_next</item>
+        <item name="android:drawableLeft">@drawable/sjfd_pre</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+</resources>

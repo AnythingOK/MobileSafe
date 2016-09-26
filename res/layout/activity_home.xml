@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_blue_bkg" >
+        
+        <ImageView 
+            android:id="@+id/iv_main_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+        	android:layout_centerVertical="true"
+        	android:src="@drawable/main_ic_heima"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginLeft="100dp"
+			android:layout_marginTop="40dp"
+            android:text="黑马安全卫士"
+            android:textSize="19sp"
+            />
+
+        <com.lingzhi.mobilesafe.ui.FocusView
+            android:focusableInTouchMode="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/iv_main_ic"
+            android:layout_below="@id/tv_main_title"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="黑马安全卫士，时刻保护手机安全，版权所有，盗版必究 www.itheima.com"
+            android:textSize="15sp"
+            android:textColor="#bbff0000"
+            android:ellipsize="marquee"
+            />
+        
+        <ImageButton 
+            android:onClick="settingCenterActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_ic_setting"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+
+    <GridView 
+        android:id="@+id/gv_main_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="2"
+        />
+</LinearLayout>

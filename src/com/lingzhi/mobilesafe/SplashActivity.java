@@ -34,6 +34,12 @@ import android.widget.Toast;
 import utils.GetLocalVersion;
 import utils.StreamTools;
 
+/**
+ * this project is about mobile safe
+ * this is my first github project
+ * @author lingzhizpl
+ *
+ */
 public class SplashActivity extends Activity {
 
 	private static final String TAG = "SplashActivity";
